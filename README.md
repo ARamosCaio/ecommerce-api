@@ -6,6 +6,9 @@ The objective of this project is to create an API to manage a web store, in whic
 
 ## Tools Used
 
+- [Python](https://realpython.com/installing-python/)
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/installation/)
+
 ## How To Run It
  
 ## What I've Learned
