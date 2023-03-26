@@ -7,7 +7,7 @@ create table couches (
     product_size set('2 lugares', '3 lugares', '4 lugares'),
     amount_stock int default 0,
     price decimal(6,2) not null
-)
+);
 
 create table beds (
     id int not null auto_increment primary key,
@@ -15,7 +15,7 @@ create table beds (
     product_size set('Solteiro', 'Casal'),
     amount_stock int default 0,
     price decimal(6,2) not null
-)
+);
 
 create table wardrobe (
     id int not null auto_increment primary key,
@@ -23,4 +23,4 @@ create table wardrobe (
     product_size set('2 portas', '3 portas', '4 portas'),
     amount_stock int default 0,
     price decimal(6,2) not null
-)
+);
