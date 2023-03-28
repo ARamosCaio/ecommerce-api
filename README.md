@@ -10,5 +10,11 @@ The objective of this project is to create an API to manage a web store, in whic
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/installation/)
 
 ## How To Run It
+
+To run a docker container using a mysql image, run the following command
+
+```shell
+docker run --name ecommerce-db -v /db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=senha123 -p 3306:3306 -d mysql:latest
+```
  
 ## What I've Learned
