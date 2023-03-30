@@ -1,11 +1,11 @@
-from app import db
+from app.db import db
 
 class Beds(db.Model):
     __tablename__ = "beds"
 
     id = db.Column(db.Integer, primary_key=True)
-    product_type = db.Column(db.String, nullable=False)
-    product_size = db.Column(db.String, nullable=False)
+    product_type = db.Column(db.String(20), nullable=False)
+    product_size = db.Column(db.String(20), nullable=False)
     amount_stock = db.Column(db.Integer, default=0)
     price = db.Column(db.Float, nullable=True)
 
@@ -22,8 +22,8 @@ class Couches(db.Model):
     __tablename__= "couches"
 
     id = db.Column(db.Integer, primary_key=True)
-    product_type = db.Column(db.String, nullable=False)
-    product_size = db.Column(db.String, nullable=False)
+    product_type = db.Column(db.String(20), nullable=False)
+    product_size = db.Column(db.String(20), nullable=False)
     amount_stock = db.Column(db.Integer, default=0)
     price = db.Column(db.Float, nullable=True)
 
@@ -40,8 +40,8 @@ class Couches(db.Model):
 class Wardrobe(db.Model):
     __tablename__ = "wardrobes"
     id = db.Column(db.Integer, primary_key=True)
-    product_type = db.Column(db.String, nullable=False)
-    product_size = db.Column(db.String, nullable=False)
+    product_type = db.Column(db.String(20), nullable=False)
+    product_size = db.Column(db.String(20), nullable=False)
     amount_stock = db.Column(db.Integer, default=0)
     price = db.Column(db.Float, nullable=True)
 
